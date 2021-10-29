@@ -32,7 +32,13 @@ submit.addEventListener("click", function() {
         return false;
     }
 
-    resultCost.innerHTML = cost.value + "$";
+    if (!cost.value.includes(".")) {
+        resultCost.innerHTML = cost.value + ".00$";
+    }
+    else {
+        resultCost.innerHTML = cost.value + "$";
+    }
+
     tipAmt.innerHTML = "(" + range.value + "%)";
 
     let total = parseFloat(cost.value);
@@ -70,5 +76,3 @@ reset.addEventListener("click", function() {
 
     even.disabled = false;
 })
-
-
