@@ -14,7 +14,7 @@ html {
     transform: translate(-50%, -50%);
 
     width: 75vw;
-    height: 75vh;
+    height: 85vh;
     background-color: #EBD4CB;
 }
 
@@ -84,7 +84,6 @@ html {
 }
 
 .buttons {
-    background-color: lightpink;
     margin-top: 5vh;
     padding-left: 5vw;
     font-size: 24px;
@@ -110,9 +109,23 @@ html {
 
 .results {
     display: none;
-    background-color: lightblue;
     margin-top: 5vh;
     padding-left: 5vw;
     font-size: 36px;
     letter-spacing: 5px;
+}
+
+hr {
+    background-color: black;
+    margin-right: 5vw;
+}
+
+#costTotal, #tipAmount, #tipNumber, #newTotal {
+    float: right;
+    margin-right: 5vw;
+    text-align: right;
+}
+
+#tipAmount {
+    margin-right: 2.5vw;
 }

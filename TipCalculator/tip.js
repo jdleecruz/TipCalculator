@@ -27,7 +27,7 @@ submit.addEventListener("click", function() {
     }
 
     resultCost.innerHTML = cost.value + "$";
-    tipAmt.innerHTML = range.value + "%";
+    tipAmt.innerHTML = "(" + range.value + "%)";
 
     let total = parseFloat(cost.value);
     let tip = parseInt(range.value) / 100;
