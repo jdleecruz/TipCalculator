@@ -86,23 +86,24 @@ html {
 .buttons {
     margin-top: 5vh;
     padding-left: 5vw;
-    font-size: 24px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 }
 
-#submitBtn, #resetBtn {
+#submitBtn, #resetBtn, #evenBtn {
     border-radius: 10px;
     box-shadow: 3px 3px #720026;
     width: 100px;
+
+    font-size: 24px;
     font-family: 'Bebas Neue', cursive;
 }
 
-#submitBtn:hover, #resetBtn:hover {
+#submitBtn:hover, #resetBtn:hover, #evenBtn:hover {
     background-color: lightgrey;
     cursor: pointer;
 }
 
-#submitBtn:active, #resetBtn:active {
+#submitBtn:active, #resetBtn:active, #evenBtn:active {
     transform: translateY(5px);
     box-shadow: 1px 1px #720026;
 }
@@ -128,4 +129,10 @@ hr {
 
 #tipAmount {
     margin-right: 2.5vw;
+}
+
+.even {
+    display: none;
+    margin-top: 5vh;
+    padding-left: 5vw;
 }

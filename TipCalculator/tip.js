@@ -1,9 +1,13 @@
 const range = document.getElementById("myRange");
 const number = document.querySelector(".value");
 const cost = document.getElementById("totalCost");
+
 const resultDiv = document.querySelector(".results");
+const evenDiv = document.querySelector(".even");
+
 const submit = document.getElementById("submitBtn");
 const reset = document.getElementById("resetBtn");
+const even = document.getElementById("evenBtn");
 
 number.innerHTML = range.value + "%";
 
@@ -16,6 +20,8 @@ submit.addEventListener("click", function() {
     let tipAmt = document.getElementById("tipAmount");
     let tipNum = document.getElementById("tipNumber");
     let endTotal = document.getElementById("newTotal");
+
+    even.disabled = false;
 
     if (isNaN(cost.value)) {
         alert("Error: must input numbers only.");
@@ -37,7 +43,21 @@ submit.addEventListener("click", function() {
     tipNum.innerHTML = tipTotal.toFixed(2) + "$";
     endTotal.innerHTML = newTotal.toFixed(2) + "$";
 
+    even.addEventListener("click", function() {
+        let evenTotal = Math.round(newTotal);
+        let remainder = evenTotal - newTotal;
+        tipTotal = tipTotal + remainder;
+
+        tipAmt.innerHTML = "(~" + range.value + "%)";
+
+        tipNum.innerHTML = tipTotal.toFixed(2) + "$";
+        endTotal.innerHTML = evenTotal.toFixed(2) + "$";
+
+        even.disabled = true;
+    })
+
     resultDiv.style.display = "block";
+    evenDiv.style.display = "block";
 })
 
 reset.addEventListener("click", function() {
@@ -46,4 +66,9 @@ reset.addEventListener("click", function() {
     number.innerHTML = range.value + "%";
 
     resultDiv.style.display = "none";
+    evenDiv.style.display = "none";
+
+    even.disabled = false;
 })
+
+
