@@ -17,6 +17,15 @@ submit.addEventListener("click", function() {
     let tipNum = document.getElementById("tipNumber");
     let endTotal = document.getElementById("newTotal");
 
+    if (isNaN(cost.value)) {
+        alert("Error: must input numbers only.");
+        return false;
+    }
+    else if (cost.value === "") {
+        alert("Error: please input a total cost.")
+        return false;
+    }
+
     resultCost.innerHTML = cost.value + "$";
     tipAmt.innerHTML = range.value + "%";
 
