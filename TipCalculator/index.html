@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                Tip Calculator
+            </div>
+            <div class="total">
+                Total Cost
+                <input id="totalCost" type="text"> $</input>
+            </div>
+            <div class="tip">
+                Tip Amount
+                <input type="range" min="0" max="100" class="slider" id="myRange"></input>
+                <span class="value"></span>
+            </div>
+            <div class="buttons">
+                <button id="submitBtn" type="button">Submit</button>
+                <button id="resetBtn" type="button">Reset</button>
+            </div>
+            <div class="results">
+                Results
+                <div id="costTotal"></div>
+                <div id="tipAmount"></div>
+                <span id="tipNumber"></span>
+                <div id="newTotal"></div>
+            </div>
+        </div>
+        <script src="tip.js"></script>
+    </body>
+</html>
