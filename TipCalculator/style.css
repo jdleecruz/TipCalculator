@@ -7,14 +7,15 @@ html {
 }
 
 .wrapper {
+    overflow: auto;
     border-radius: 12px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 75vw;
-    height: 85vh;
+    width: 75%;
+    height: 85%;
     background-color: #EBD4CB;
 }
 
@@ -95,6 +96,7 @@ html {
     width: 100px;
 
     font-size: 24px;
+    color: black;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -121,7 +123,7 @@ hr {
     margin-right: 5vw;
 }
 
-#costTotal, #tipAmount, #tipNumber, #newTotal {
+#costTotal, #tipNumber, #newTotal {
     float: right;
     margin-right: 5vw;
     text-align: right;
@@ -135,4 +137,48 @@ hr {
     display: none;
     margin-top: 5vh;
     padding-left: 5vw;
+}
+
+@media only screen
+and (max-width : 768px) {
+    .wrapper {
+        width: 95%;
+        padding-bottom: 5vh;
+    }
+    .header {
+        font-size: 36px;
+    }
+    .total {
+        margin-top: 7.5vh;
+    }
+    .total, .tip, .results {
+        font-size: 32px;
+    }
+    #totalCost {
+        margin-left: 0vw;
+        width: 70vw;
+        font-size: 24px;
+    }
+    .slider {
+        width: 75%;
+        height: 25px;
+        margin-left: 0vw;
+    }
+    .slider::-webkit-slider-thumb {
+        width: 30px;
+        height: 30px;
+    }
+    .slider::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+    }
+    .buttons {
+        margin-top: 3vh;
+    }
+    #tipAmount {
+        letter-spacing: 1px;
+    }
+    #evenBtn {
+        width: 135px;
+    }
 }
