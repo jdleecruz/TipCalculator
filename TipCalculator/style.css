@@ -1,132 +1,121 @@
 html {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom right, #011738, #5F7367);
+    background-color: #E5FAFA;
 
-    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 500px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
-    overflow: auto;
+    position: absolute;
     border-radius: 12px;
-    position: fixed;
-    top: 50%;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    top: 425px;
     left: 50%;
     transform: translate(-50%, -50%);
 
     width: 75%;
-    height: 85%;
-    background-color: #EBD4CB;
+    height: 60%;
+    background-color: #FFFFFF;
 }
 
 .header {
     margin-top: 5vh;
     text-align: center;
+    font-weight: bold;
     font-size: 48px;
-    letter-spacing: 20px;
 }
 
-.total {
+.total, .tip {
     margin-top: 10vh;
     padding-left: 5vw;
     font-size: 36px;
-    letter-spacing: 5px;
-}
-
-#totalCost {
-    margin-left: 2vw;
-    font-size: 32px;
-    font-family: 'Bebas Neue', cursive;
 }
 
 .tip {
     margin-top: 5vh;
-    padding-left: 5vw;
-    font-size: 36px;
-    letter-spacing: 5px;
 }
 
-.slider {
-    -webkit-appearance: none;
-    width: 50%;
-    height: 25px;
-    background: #720026;
-    margin-left: 2vw;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    cursor: pointer;
+#costInput, #tipInput {
+    margin-left: 4vw;
+    font-size: 32px;
+    width: 150px;
+    text-align: right;
+    background-color: #ECECEC;
 }
 
-.slider:hover {
-    opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #4F6D7A;
-    cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-    width: 35px;
-    height: 35px;
-    background: #4F6D7A;
-    cursor: pointer;
-}
-
-.value {
-    margin-left: 1vw;
+#tipInput {
+    margin-left: 5.1vw;
 }
 
 .buttons {
-    margin-top: 5vh;
+    margin-top: 7.5vh;
     padding-left: 5vw;
-    letter-spacing: 10px;
 }
 
 #submitBtn, #resetBtn, #evenBtn {
     border-radius: 10px;
-    box-shadow: 3px 3px #720026;
-    width: 100px;
+    background-color: #ECECEC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 150px;
+    height: 55px;
 
-    font-size: 24px;
+    font-size: 36px;
     color: black;
-    font-family: 'Bebas Neue', cursive;
+}
+
+#evenBtn {
+    width: 200px;
 }
 
 #submitBtn:hover, #resetBtn:hover, #evenBtn:hover {
-    background-color: lightgrey;
+    background-color: #E5FAFA;
     cursor: pointer;
 }
 
 #submitBtn:active, #resetBtn:active, #evenBtn:active {
     transform: translateY(5px);
-    box-shadow: 1px 1px #720026;
+    box-shadow: 1px 1px black;
+}
+
+.wrapper2 {
+    display: none;
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    top: 1100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 75%;
+    height: 60%;
+    background-color: #FFFFFF;
 }
 
 .results {
-    display: none;
     margin-top: 5vh;
     padding-left: 5vw;
     font-size: 36px;
-    letter-spacing: 5px;
+}
+
+.resultsHeader {
+    font-size: 42px;
+    font-weight: bold;
 }
 
 hr {
+    height: 2px;
     background-color: black;
     margin-right: 5vw;
+    border-style: none;
 }
 
-#costTotal, #tipNumber, #newTotal {
+#subTotal, #tipNumber, #newTotal {
     float: right;
     margin-right: 5vw;
     text-align: right;
+    color: #444444;
 }
 
 #tipAmount {
@@ -134,51 +123,67 @@ hr {
 }
 
 .even {
-    display: none;
     margin-top: 5vh;
     padding-left: 5vw;
 }
 
 @media only screen
 and (max-width : 768px) {
+    html {
+        padding-bottom: 300px;
+    }
     .wrapper {
-        width: 95%;
-        padding-bottom: 5vh;
+        top: 250px;
+        width: 385px;
+        height: 400px;
     }
     .header {
+        margin-top: 3vh;
         font-size: 36px;
     }
     .total {
-        margin-top: 7.5vh;
+        margin-top: 6vh;
     }
-    .total, .tip, .results {
-        font-size: 32px;
+    .total, .tip {
+        font-size: 30px;
     }
-    #totalCost {
-        margin-left: 0vw;
-        width: 70vw;
-        font-size: 24px;
-    }
-    .slider {
-        width: 75%;
+    #costInput, #tipInput {
+        float: right;
+        font-size: 30px;
+        margin-right: 5vw;
         height: 25px;
-        margin-left: 0vw;
-    }
-    .slider::-webkit-slider-thumb {
-        width: 30px;
-        height: 30px;
-    }
-    .slider::-moz-range-thumb {
-        width: 30px;
-        height: 30px;
+        width: 100px;
     }
     .buttons {
-        margin-top: 3vh;
+        margin-top: 6vh;
+    }
+    #submitBtn, #resetBtn, #evenBtn {
+        margin-top: 5vh;
+        font-size: 30px;
+    }
+    #resetBtn {
+        float: right;
+        margin-right: 5vw;
+    }
+    .wrapper2 {
+        top: 735px;
+        width: 385px;
+        height: 500px;
+    }
+    .results {
+        margin-top: 5vh;
+        padding-left: 5vw;
+        font-size: 30px;
+    }
+    .resultsHeader {
+        font-size: 32px;
     }
     #tipAmount {
         letter-spacing: 1px;
     }
     #evenBtn {
-        width: 135px;
+        margin-top: 4vh;
+        margin-left: 50px;
+        width: 250px;
     }
 }

@@ -8,45 +8,60 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!--Overall container for first section-->
         <div class="wrapper">
+            <!--The header of the application-->
             <div class="header">
                 Tip Calculator
             </div>
+            <!--Class for total prompt in first section-->
             <div class="total">
-                Total Cost
-                <input id="totalCost" type="text"> $</input>
+                Enter Cost
+                <input id="costInput" type="text"></input>
             </div>
+            <!--Class for tip prompt in first section-->
             <div class="tip">
-                Tip Amount
-                <input type="range" min="0" max="100" class="slider" id="myRange"></input>
-                <span class="value"></span>
+                Enter Tip
+                <input id="tipInput" type="text"> %</input>
             </div>
+            <!--Class for buttons of first section-->
             <div class="buttons">
                 <button id="submitBtn" type="button">Submit</button>
                 <button id="resetBtn" type="button">Reset</button>
             </div>
+        </div>
+        <!--Overall container for second section-->
+        <div class="wrapper2">
+            <!--Container for the results from the entered data-->
             <div class="results">
-                Results
+                <!--Header of our second section-->
+                <div class="resultsHeader">Results</div>
                 <hr>
                 <br>
-                Initial Cost
-                <span id="costTotal"></span>
-                <br>
-                Tip Total
-                <span id="tipNumber"></span>
-                <span id="tipAmount"></span>
+                Subtotal
+                <!--Displays the subtotal entered previously-->
+                <span id="subTotal"></span>
                 <br><br>
-                Total Cost
+                Tip
+                <!--Displays the tip in dollars-->
+                <span id="tipNumber"></span>
+                <!--Displays the tip in percentage entered previously-->
+                <span id="tipAmount"></span>
+                <br><br><br>
+                Total
+                <!--Displays the overall total-->
                 <span id="newTotal"></span>
             </div>
+            <!--Container for the make even button-->
             <div class="even">
                 <button id="evenBtn" type="button">Make Even</button>
             </div>
         </div>
+        <!--The call to the external .js file-->
         <script src="tip.js"></script>
     </body>
 </html>
