@@ -36,14 +36,14 @@ submit.addEventListener("click", function() {
     }
     //If the user enters nothing for the cost textbox an alert message will be displayed
     //and we will exit the function.
-    else if (cost.value === "") {
-        alert("Error: please input a total cost.")
+    else if (cost.value === "" || cost.value <= 0) {
+        alert("Error: please input a valid total cost.")
         return false;
     }
     //If the user enters nothing for the tip textbox an alert message will be displayed
     //and we will exit the function.
-    else if (tip.value === "") {
-        alert("Error: please input a tip percentage.")
+    else if (tip.value === "" || tip.value < 0) {
+        alert("Error: please input a valid tip percentage.")
         return false;
     }
 

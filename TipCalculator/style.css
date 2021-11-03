@@ -55,7 +55,7 @@ body {
 }
 
 .buttons {
-    margin-top: 7vh;
+    margin-top: 5vh;
     margin-left: 5vw;
 }
 
@@ -120,7 +120,7 @@ hr {
 }
 
 .even {
-    margin-top: 7vh;
+    margin-top: 5vh;
     margin-left: 5vw;
 }
 
@@ -154,7 +154,6 @@ and (max-width : 768px) {
     }
     #submitBtn, #resetBtn, #evenBtn {
         width: 125px;
-        margin-top: 5vh;
         font-size: 30px;
     }
     #resetBtn {
