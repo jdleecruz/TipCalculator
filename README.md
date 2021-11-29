@@ -4,12 +4,19 @@ Application to easily determine how much to pay based on desired tip percentage.
 ![image](https://user-images.githubusercontent.com/60195435/143951519-e9394735-e3fc-44ae-85a8-908c38b953be.png)
 ![image](https://user-images.githubusercontent.com/60195435/143951613-b4a696cd-6683-409a-8383-9443ccf1b4cd.png)
 
+
+## How To
+1. Enter cost of item, meal, etc.
+2. Enter tip amount (In percentage (%) form)
+3. Hit submit
+4. It will display the results along with a Make Even option.
+
 ## Features
 ### Reset Button
 Allows user to completely reset all input fields to starting values.
 
 ### Make Even Button
-Allows user to convert the final Total to that having no cents.
+Allows user to convert the final Total to that having no remaining cents.
 - 29.60 -> 30.00 
 - 21.22 -> 21.00
 
