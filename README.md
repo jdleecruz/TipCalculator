@@ -10,6 +10,7 @@ Application to easily determine how much to pay based on desired tip percentage.
 2. Enter tip amount (In percentage (%) form)
 3. Hit submit
 4. It will display the results along with a Make Even option.
+5. Hit reset and repeat steps (1-3)
 
 ## Features
 ### Reset Button
