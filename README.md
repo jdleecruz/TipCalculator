@@ -13,6 +13,9 @@ Application to easily determine how much to pay based on desired tip percentage.
 5. Hit reset and repeat steps (1-3)
 
 ## Features
+### Mobile Responsive
+It will operate properly on generally most mobile devices.
+
 ### Reset Button
 Allows user to completely reset all input fields to starting values.
 
