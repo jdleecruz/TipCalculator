@@ -12,6 +12,8 @@ Allows user to completely reset all input fields to starting values.
 Allows user to convert the final Total to that having no cents.
 - 29.60 -> 30.00 
 - 21.22 -> 21.00
+
+![image](https://user-images.githubusercontent.com/60195435/143952282-3169c1af-411f-4b11-a012-1853d2534b4d.png)
 This does result in the Tip amount to be changed however.
 
 ## Languages Used
