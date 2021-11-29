@@ -12,6 +12,11 @@ Application to easily determine how much to pay based on desired tip percentage.
 4. It will display the results along with a Make Even option.
 5. Hit reset and repeat steps (1-3)
 
+## Requirements
+1. All fields must be entered
+2. All fields must be numerical values (no letters)
+If not followed Alert messages will be prompted and Results section will not show.
+
 ## Features
 ### Mobile Responsive
 It will operate properly on generally most mobile devices.
